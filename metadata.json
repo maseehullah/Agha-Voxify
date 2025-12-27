@@ -1,0 +1,7 @@
+{
+  "name": " Agha-Voxify Ver 3",
+  "description": "A premium audio transcription tool powered by Gemini, offering speaker-labeled transcripts with timestamps and automatic language detection.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

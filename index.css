@@ -1,0 +1,44 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+  }
+}
+
+@keyframes equalizer {
+  0% {
+    transform: scaleY(0.6);
+  }
+  100% {
+    transform: scaleY(1.2);
+  }
+}
+
+.animate-equalizer {
+  animation: equalizer 0.9s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes blink {
+  0%, 100% { 
+    opacity: 1; 
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.5; 
+    transform: scale(0.9);
+  }
+}
+
+.animate-blink {
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+/* Custom shadow for the equalizer glow */
+.shadow-equalizer {
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+}
